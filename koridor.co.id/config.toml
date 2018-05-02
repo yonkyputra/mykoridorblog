@@ -1,0 +1,62 @@
+baseURL = "http://koridor.co.id/"
+LanguageCode= "en-US"
+Title= "Newbie Coder"
+paginate = 5
+DisqusShortname = "YOUR_SHORT_NAME_HERE"
+Copyright = "All rights reserved - 2018"
+canonifyurls = true
+theme = "casper"
+
+[params]
+  description = "Welcome to my website"
+  metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
+  cover = "images/cover.jpg"
+  author = "Yonkay"
+  authorlocation = "Paris, France"
+  authorwebsite = "http://vjeantet.fr"
+  authorbio= "my bio"
+  logo = "images/tn.png"
+  googleAnalyticsUserID = "UA-79101-12"
+  # Optional RSS-Link, if not provided it defaults to the standard index.xml
+  RSSLink = "http://feeds.feedburner.com/..."
+  #githubName = "vjeantet"
+  #twitterName = "vjeantet"
+  facebookName = "sss"
+  # codepenName = ""
+   linkedinName = "ss"
+  # stackoverflowId = ""
+  # keybaseName = ""
+  # flickrName = ""
+   instagramName = "yonky"
+  # email = ""
+  # pinterestName = ""
+  # googlePlusName = ""
+  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+  hideHUGOSupport = false
+  
+  # Setting a value will load highlight.js and enable syntax highlighting using the style selected.
+  # See https://github.com/isagalaev/highlight.js/tree/master/src/styles for available styles
+  # A preview of above styles can be viewed at https://highlightjs.org/static/demo/
+  hjsStyle = "default"
+
+    [params.social]
+    twitter = "your_twitter"
+
+    [[menu.main]]
+  name = "My Blog"
+  weight = -120
+  identifier = "blog"
+  url = "/"
+
+    [[menu.main]]
+  name = "About me"
+  weight = -110
+  identifier = "about"
+  url = "/about"
+
+[[menu.main]]
+  name = "post"
+  weight = -100
+  identifier = "post"
+  url = "/post"
+
