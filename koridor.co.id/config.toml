@@ -1,9 +1,9 @@
 baseURL = "http://koridor.co.id/"
 LanguageCode= "en-US"
-Title= "Newbie Coder"
+Title= "Legend in Code"
 paginate = 5
-DisqusShortname = "YOUR_SHORT_NAME_HERE"
-Copyright = "All rights reserved - 2018"
+DisqusShortname = "koridors"
+Copyright = "All rights reserved - 2018 | koridor.io"
 canonifyurls = true
 theme = "casper"
 
@@ -11,23 +11,25 @@ theme = "casper"
   description = "Welcome to my website"
   metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
   cover = "images/cover.jpg"
+  image = "images/cover.jpg"
   author = "Yonkay"
-  authorlocation = "Paris, France"
+  authorlocation = "Bogor, Indonesia"
   authorwebsite = "http://vjeantet.fr"
-  authorbio= "my bio"
-  logo = "images/tn.png"
-  googleAnalyticsUserID = "UA-79101-12"
+  authorbio= "Kuli Kode Yang Jarang Mandi"
+  logo = "images/author.jpg"
+  #googleAnalyticsUserID = "UA-79101-12"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   RSSLink = "http://feeds.feedburner.com/..."
-  #githubName = "vjeantet"
+  githubName = "yonkyputra"
+  facebookName = "martindoputra"
+  linkedinName = "yongky-martindo-putra-347229109"
+  instagramName = "yonkyputra/"   
+  
   #twitterName = "vjeantet"
-  facebookName = "sss"
   # codepenName = ""
-   linkedinName = "ss"
   # stackoverflowId = ""
   # keybaseName = ""
   # flickrName = ""
-   instagramName = "yonky"
   # email = ""
   # pinterestName = ""
   # googlePlusName = ""
@@ -39,24 +41,50 @@ theme = "casper"
   # A preview of above styles can be viewed at https://highlightjs.org/static/demo/
   hjsStyle = "default"
 
-    [params.social]
+[params.social]
     twitter = "your_twitter"
 
-    [[menu.main]]
-  name = "My Blog"
+[[menu.main]]
+  name = "Home"
   weight = -120
   identifier = "blog"
   url = "/"
 
-    [[menu.main]]
-  name = "About me"
+[[menu.main]]
+  name = "My Profile"
   weight = -110
   identifier = "about"
   url = "/about"
 
 [[menu.main]]
-  name = "post"
+  name = "Blog"
   weight = -100
   identifier = "post"
   url = "/post"
+
+  [related]
+
+# Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+threshold = 80
+
+# To get stable "See also" sections we, by default, exclude newer related pages.
+includeNewer = false
+
+# Will lower case keywords in both queries and in the indexes.
+toLower = false
+
+[[related.indices]]
+name = "keywords"
+weight = 150
+[[related.indices]]
+name  = "author"
+toLower = true
+weight = 30
+[[related.indices]]
+name  = "tags"
+weight = 100
+[[related.indices]]
+name  = "date"
+weight = 10
+pattern = "2006"
 

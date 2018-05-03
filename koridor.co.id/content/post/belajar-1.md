@@ -2,6 +2,7 @@
 title: "Belajar 1"
 date: 2018-05-02T14:31:57+07:00
 draft: false
+tags = [".vimrc", "plugins", "spf13-vim", "vim"]
 ---
 
 # Tenuit lenta alis tum sanguine verus inde
@@ -15,6 +16,21 @@ manant; visa omnia generi duxit fallaci. Similisque repente valle nubila qua
 Inachis secura, nisi Oriente amans domus, adsueta. Ab **litus oculos**, iam,
 saevit, superabat cum violentam et possent inritus aera color est totidem iussa,
 ramos. Vota diversa! Tutus matri ferrum corpus, et mittit victum.
+
+{{< highlight go "linenos=table,hl_lines=0 0-0,linenostart=1" >}}
+{{if .Params.cover}}
+	{{if or (eq (substr .Params.cover 0 7) "http://") (eq (substr .Params.cover 0 8) "https://")}}
+  <header class="main-header tag-head" style="background-image: url({{.Params.cover}})">
+  {{ else }}
+  <header class="main-header tag-head" style="background-image: url({{.Params.cover | relURL}})">
+  {{ end }}
+{{else if .Site.Params.cover}}
+	 {{if or (eq (substr .Site.Params.cover 0 7) "http://") (eq (substr .Site.Params.cover 0 8) "https://")}}
+  <header class="main-header tag-head" style="background-image: url({{.Site.Params.cover}})">
+  {{ else }}
+  <header class="main-header tag-head" style="background-image: url({{.Site.Params.cover  | relURL}})">
+  {{ end }}
+{{< / highlight >}}
 
 ## Est Phoebus mortalia subit
 
