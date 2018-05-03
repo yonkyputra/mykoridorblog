@@ -2,7 +2,6 @@
 title: "Belajar 1"
 date: 2018-05-02T14:31:57+07:00
 draft: false
-tags = [".vimrc", "plugins", "spf13-vim", "vim"]
 ---
 
 # Tenuit lenta alis tum sanguine verus inde
