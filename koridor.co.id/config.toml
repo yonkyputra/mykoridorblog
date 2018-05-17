@@ -7,6 +7,9 @@ Copyright = "All rights reserved - 2018 | koridor.io"
 canonifyurls = true
 theme = "casper"
 
+[permalinks]
+  post = "/:year/:month/:title/"
+
 [params]
   description = "Welcome to my website"
   metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
